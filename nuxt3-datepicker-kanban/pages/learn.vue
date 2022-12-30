@@ -3,7 +3,7 @@
     <div class="w-full bg-gray-900"><DatePicker /></div>
     <div class="w-full bg-[#FAFAFA]">
       <div class="container mx-auto px-4 grid grid-cols-4 gap-4">
-        <div class="col-span-1 py-4">
+        <div class="sm:col-span-4 md:col-span-4 lg:col-span-1 col-span-4 py-4">
           <h1 class="text-2xl text-gray-900 mb-4 font-bold">Today</h1>
           <p class="text-sm text-gray-400 mb-2">Courses</p>
           <draggable
@@ -61,9 +61,11 @@
             </template>
           </draggable>
         </div>
-        <div class="col-span-3 py-4">
+        <div class="sm:col-span-4 md:col-span-4 lg:col-span-3 col-span-4 py-4">
           <h1 class="text-2xl text-gray-900 mr-4 font-bold">TimeTable</h1>
-          <div class="overflow-x-auto relative flex items-center rounded-lg">
+          <div
+            class="w-full overflow-x-auto relative flex items-center rounded-lg"
+          >
             <table class="w-full">
               <tr class="grid grid-cols-4">
                 <th class="col-span-1">
