@@ -4,7 +4,7 @@
       <a href="#" class="font-bold text-white text-xl w-8 h-8">
         <img src="@/assets/img/logo.png" alt="Logo" class="w-8 h-8 mr-2" />
       </a>
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <NuxtLink
           v-for="(menu, i) in menus"
           :key="i"
@@ -16,7 +16,7 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="flex space-x-4">
+    <div class="md:flex hidden space-x-4">
       <button
         v-for="icon in iconMenus"
         :key="icon.id"
@@ -26,7 +26,7 @@
       </button>
     </div>
 
-    <div class="block md:hidden space-x-4">
+    <div class="block lg:hidden space-x-4">
       <button
         class="bg-[#313439] text-gray-400 hover:text-white font-bold py-2 px-4 rounded-lg"
       >
