@@ -46,9 +46,27 @@
         ]"
         class="text-white"
         :modules="modules"
-        :slides-per-view="width > 800 ? 7 : 4"
+        :slides-per-view="7"
         :space-between="50"
         :navigation="true"
+        :breakpoints="{
+          '300': {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          '640': {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          '1024': {
+            slidesPerView: 7,
+            spaceBetween: 50,
+          },
+        }"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
       >
